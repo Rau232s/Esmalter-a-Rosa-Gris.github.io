@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa & Gris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logoo.png" alt="Logo Rosa & Gris" class="logo">
+            <h1>Esmaltería Rosa & Gris</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenidos a Rosa & Gris</h2>
+            <p>Nos encanta realzar tu belleza con servicios personalizados. ¡Déjanos consentirte!</p>
+            <a href="servicios.html" class="btn">Explora nuestros servicios</a>
+        </section>
+        
+        
+
+        <section class="ubicacion">
+            <h2>Encuéntranos en nuestra ubicación</h2>
+            <p>Visítanos en Calle Gil Coimbra y Cipriano Barace, Trinidad, Beni, Bolivia.</p>
+            <div class="mapa-container">
+                <a href="https://maps.app.goo.gl/H8fPba8YwT1YL1bZ8?g_st=ii" target="_blank">
+                    <img src="mapa-ejemplo.jpg" alt="Ubicación en Google Maps" class="mapa-img">
+                </a>
+            </div>
+        </section>
+    </main>
+    <div class="share-container">
+        <button id="share-button">Compartir esta página</button>
+        <div class="share-options" id="share-options">
+            <a href="#" id="copy-link" onclick="copyLink()">Copiar enlace</a>
+            <a href="https://wa.me/?text=Visita%20Esmaltería%20Rosa%20%26%20Gris%3A%20https%3A%2F%2Ftu-pagina.com" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/esmalteriarosagris" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tu-pagina.com" target="_blank">Facebook</a>
+            <a href="mailto:?subject=Esmaltería Rosa & Gris&body=Visita Esmaltería Rosa & Gris: https://tu-pagina.com" target="_blank">Correo</a>
+        </div>
+    </div>
+    
+    <script>
+        // Mostrar/Ocultar opciones de compartir
+        const shareButton = document.getElementById("share-button");
+        const shareOptions = document.getElementById("share-options");
+    
+        shareButton.addEventListener("click", () => {
+            shareOptions.classList.toggle("show");
+        });
+    
+        // Función para copiar el enlace al portapapeles
+        function copyLink() {
+            const pageUrl = window.location.href;
+            navigator.clipboard.writeText(pageUrl)
+                .then(() => alert("Enlace copiado al portapapeles"))
+                .catch((error) => alert("Error al copiar el enlace: " + error));
+        }
+    </script>
+    
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/esmalteriarosagris" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@esmalteriarosagris" target="_blank">TikTok</a> |
+        <a href="https://www.facebook.com/Esmaltería-Rosa&Gris" target="_blank">Facebook</a> |
+        <a href="https://wa.me/59172822255" target="_blank">WhatsApp</a>
+       
+    </footer>
+    
+    
+    
+</body>
+</html>
