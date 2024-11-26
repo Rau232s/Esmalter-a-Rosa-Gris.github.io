@@ -24,4 +24,8 @@ This project is a simple yet elegant webpage that features pastel colors, a resp
 ## Technologies Used
 - **HTML5**
 - **CSS3** (with Google Fonts: 'Poppins')
+- ## Instalación
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Rau232s/Esmalter-a-Rosa-Gris.github.io/mi-pagina-web.git
 - **Responsive Design Techniques**
